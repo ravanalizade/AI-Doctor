@@ -8,6 +8,9 @@ public class AiDoctorBackApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(AiDoctorBackApplication.class, args);
+
+        System.out.println("xiy");
+
     }
 
 }
