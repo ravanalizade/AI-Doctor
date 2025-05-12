@@ -9,6 +9,6 @@ public class RestTemplateConfig {
 
     @Bean
     public RestTemplate restTemplate() {
-        return new RestTemplate();  // Creates a RestTemplate bean that will be injected into your service
+        return new RestTemplate();
     }
 }

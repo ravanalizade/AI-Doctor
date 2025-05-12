@@ -14,13 +14,10 @@ public class DiagnosisController {
 
     @PostMapping
     public ResponseEntity<String> getDiagnosis(@RequestBody String symptoms) {
-        // Log the received symptoms to verify
         System.out.println("Controller received symptoms: " + symptoms);
 
-        // Get the diagnosis from the service
         String response = openAIService.getDiagnosis(symptoms);
 
-        // Return the response back to the client
         return ResponseEntity.ok(response);
     }
 }
